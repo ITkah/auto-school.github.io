@@ -1,0 +1,21 @@
+.matherial-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    img {
+        margin-bottom: 25px;
+        max-width: 100%;
+        height: auto;
+    }
+    p {
+        word-break: break-all;
+    }
+    p,a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

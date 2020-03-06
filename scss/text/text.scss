@@ -1,0 +1,30 @@
+.title-xl {
+    margin-bottom: 40px;
+    font: 900 2.25rem 'Roboto', sans-serif;
+    text-align: center;
+    @media (max-width: 990px) {
+        font-size: 2rem;
+        margin-bottom: 35px;
+    }
+}
+
+.title-sm {
+    font: 900 1.25rem 'Roboto', sans-serif;
+    @media (max-width: 990px) {
+        font-size: 1.125rem;
+    }
+}
+
+.text-light {
+    font: 300 .95rem 'Roboto', sans-serif;
+    @media (max-width: 990px) {
+        font-size: .87rem;
+    }
+}
+
+.text-bold {
+    font: 700 .95rem 'Roboto', sans-serif;
+    @media (max-width: 990px) {
+        font-size: .87rem;
+    }
+}

@@ -1,0 +1,184 @@
+footer {
+    box-shadow: 0 7px 20px rgba(0, 0, 0, .1);
+    border-radius: 15px;
+    background: #fff;
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 990px) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer-box-logo {
+    margin-right: 5px;
+    @media (max-width: 990px) {
+        margin: 0 auto;
+        display: block;
+    }
+    img {
+        @media (max-width: 990px) {
+            height: 120px;
+            max-width: 100%;
+        }
+    }
+}
+
+.footer-nav-box {
+    @media (max-width: 990px) {
+        position: relative;
+        top: 0;
+        margin-bottom: 20px;
+    }
+    @media(max-width: 576px) {
+        position: relative;
+        left: 20px;
+        margin-bottom: 25px;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        @media (max-width: 990px) {
+            flex-wrap: wrap;
+            margin-bottom: 0;
+        }
+        @media (max-width: 576px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 15px;
+            margin: 0 auto;
+            max-width: 250px;
+        }
+        a {
+            margin: 0 15px;
+            font: 900 .95rem 'Roboto', sans-serif;
+            color: #000;
+            @media (max-width:1100px) {
+                margin: 0 5px;
+            }
+            @media (max-width: 576px) {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.footer-box-feedback {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 990px) {
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       margin-bottom: 25px;
+    }
+    @media (max-width: 576px) {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 20px;
+    }
+    a {
+        color: #000;
+        font: 900 .95rem 'Roboto', sans-serif;
+        position: relative;
+        @media (max-width: 990px) {
+            margin: 0 10px;
+        }
+        @media (max-width: 576px) {
+            margin: 0;
+        }
+    }
+    a:first-child {
+        margin: 5px 0 10px 0;
+        &::before {
+            position: absolute;
+            content: url(../img/icon/mail.png);
+            left: -30px;
+            top: -1px;
+            @media (max-width: 990px) {
+                position: relative;
+                left: -5px;
+                top: 5px;
+            }
+            @media (max-width: 576px) {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+        @media (max-width: 990px) {
+            margin: 0;
+        }
+        @media (max-width: 576px) {
+            padding-left: 28px;
+            margin-bottom: 15px;
+            position: relative;
+            left: -25px;
+        }
+    }
+    a:last-child {
+        &::before {
+            position: absolute;
+            content: url(../img/icon/phone.png);
+            left: -30px;
+            top: -1px;
+            @media (max-width: 990px) {
+                position: relative;
+                left: -5px;
+                top: 5px;
+            }
+            @media (max-width: 576px) {
+                position: absolute;
+                top: -1px;
+                left: 0;
+            }
+        }
+        @media (max-width: 576px) {
+            padding-left: 28px;
+            left: -66px;
+            position: relative;
+        }
+    }
+}
+
+.politika-footer {
+    @media (max-width: 990px) {
+        padding-bottom: 20px;
+    }
+    p {
+        color: #000;
+        font: 500 .8rem 'Roboto', sans-serif;
+        opacity: .5;
+        @media (max-width: 990px) {
+            text-align: center;
+        }
+    }
+}
+
+.desk {
+    display: block;
+    margin-left: 15px;
+    @media (max-width:1100px) {
+        margin-left: 5px;
+    }
+    @media (max-width: 990px) {
+        display: none;
+    }
+}
+
+.mob {
+    display: none;
+    @media (max-width: 990px) {
+        display: block;
+    }
+}

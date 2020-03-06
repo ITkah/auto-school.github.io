@@ -1,0 +1,101 @@
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 35px;
+    @media (max-width: 990px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.contact-box {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    margin-bottom: 25px;
+    grid-gap: 20px;
+    @media (max-width: 650px) {
+        grid-template-columns: 1fr;
+    }
+    .contact-title {
+        color: #000;
+        padding-left: 35px;
+        position: relative;
+        font: 900 1.125rem 'Roboto', sans-serif;
+    }
+    .contact-info {
+        color: #000;
+        font: normal 1.1rem/25px 'Roboto', sans-serif;
+    }
+}
+
+.contact-map {
+    position: relative;
+    height: 220px;
+    iframe {
+        height: 310px;
+        border-radius: 20px;
+        width: 100%;
+        @media (max-width: 576px) {
+            height: 220px;
+            left: -20px;
+            width: 110%;
+            position: absolute;
+        }
+        @media (max-width: 380px) {
+            width: 113%;
+        }
+        @media (max-width: 320px) {
+            width: 114.2%;
+        }
+    }
+}
+
+.contact-social {
+    margin-left: 35px;
+    display: flex;
+    @media (max-width: 990px) {
+        margin-left: 0;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    a {
+        margin-right: 20px;
+    }
+}
+
+.adress {
+    &::before {
+        content: url(../img/icon/map-xl.png);
+        position: absolute;
+        left: -10px;
+        top: -3px;
+    }
+}
+
+.time {
+    &::before {
+        content: url(../img/icon/time-xl.png);
+        position: absolute;
+        left: -10px;
+        top: -3px;
+    }
+}
+
+.email {
+    &::before {
+        content: url(../img/icon/mail-xl.png);
+        position: absolute;
+        left: -10px;
+        top: -3px;
+    }
+}
+
+.phone {
+    &::before {
+        content: url(../img/icon/phone-xl.png);
+        position: absolute;
+        left: -10px;
+        top: -3px;
+    }
+}

@@ -1,0 +1,69 @@
+.form {
+    .container {
+        max-width: 865px;
+    }
+    form {
+        border: 3px solid #C53D28;
+        box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.07);
+        border-radius: 20px;
+        padding: 30px 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        @media (max-width: 576px) {
+            padding: 20px 10px;
+        }
+        .title-xl {
+            margin-bottom: 10px;
+        }
+    }
+    .form-sm-title {
+        margin-bottom: 15px;
+        font: normal 1rem 'Roboto', sans-serif;
+    }
+    .input-box {
+        width: 350px;
+        margin-bottom: 15px;
+        @media (max-width: 576px) {
+            width: 100%;
+        }
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 15px;
+            border: 2px solid #000;
+            border-radius: 20px;
+        }
+    }
+    .btn-wrap {
+        margin-bottom: 20px;
+        width: 350px;
+        @media (max-width: 576px) {
+            width: 100%;
+        }
+        button {
+            width: 100%;
+            background: #C53D28;
+            border-radius: 20px;
+            color: #fff;
+            outline: none;
+            font: normal 1.125rem 'Roboto', sans-serif;
+            border: none;
+            padding: 12px;
+        }
+    }
+    .politica-form {
+        opacity: .5;
+        font: normal .8rem 'Roboto', sans-serif;
+        br {
+            @media (max-width: 576px) {
+                display: none;
+            }
+        }
+        a {
+            text-decoration: underline;
+            color: #000;
+        }
+    }
+}
