@@ -1,0 +1,38 @@
+.achievements-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+    .achievements-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .achievements-num {
+        color: #C53D28;
+        margin-bottom: 5px;
+        font: 900 4rem 'Roboto', sans-serif;
+    }
+    .achievements-text {
+        font-weight: normal;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        line-height: 28px;
+    }
+    .achievements-box-organ {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 0 10px;
+        }
+    }
+}

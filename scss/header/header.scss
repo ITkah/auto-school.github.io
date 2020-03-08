@@ -3,7 +3,7 @@ header {
     width: 100%;
     left: 0;
     right: 0;
-    top: 0;
+    top: -1px;
     z-index: 99;
     transition: .3s;
     @media (max-width: 990px) {
@@ -15,6 +15,9 @@ header {
 
 .header-logo {
     img {
+        @media (max-width: 1024px) {
+            height: 100px;
+        }
         @media (max-width: 990px) {
             height: 90px;
             position: relative;
@@ -53,6 +56,11 @@ header {
                 border: 3px solid transparent;
                 border-radius: 15px;
                 transition: .3s;
+                @media (max-width: 1280px) {
+                    font-size: .95rem;
+                    margin: 0 5px;
+                    padding: 10px;
+                }
                 @media (max-width: 990px) {
                     border: none;
                     color: #000;
@@ -88,6 +96,7 @@ header {
 .header-social {
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
     a {
         color: #fff;
         font: bold 1rem 'Roboto', sans-serif;

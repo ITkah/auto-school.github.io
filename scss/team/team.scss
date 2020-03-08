@@ -1,0 +1,87 @@
+.team-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 25px;
+    @media (max-width: 768px) {
+        display: none;
+    }
+    .tabs__caption {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        div {
+            height: 200px;
+            width: 100%;
+            cursor: pointer;
+            @media (max-width: 1200px) {
+                height: 170px;
+            }
+            @media (max-width:990px) {
+                height: 150px;
+            }
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .tabs__content.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.team-mob {
+    display: none;
+    @media (max-width: 768px) {
+        display: block;
+    }
+    .team-mob-box {
+        border-radius: 20px;
+        background: #fff;
+        padding: 10px;
+    }
+    .mob-box-photo {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        grid-gap: 10px;
+        img {
+            height: 110px;
+            max-width: 100%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+        .team-prof {
+            font-size: .8rem;
+            line-height: 18px;
+        }
+    }
+}
+
+.team {
+    .team-title {
+        margin-bottom: 5px;
+    }
+    .team-prof {
+        color: #C53D28;
+        font-weight: normal;
+        line-height: 23px;
+        margin-bottom: 5px;
+    }
+    .team-description {
+        font-weight: normal;
+        line-height: 23px;
+    }
+}
+
+.slick-dots li button:before {
+    font-size: 40px;
+    color: #C53D28;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #C53D28;
+    opacity: 1;
+}

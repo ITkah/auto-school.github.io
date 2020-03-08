@@ -1,0 +1,46 @@
+.review {
+    .container {
+        max-width: 990px;
+    }
+}
+
+.prev {
+    position: absolute;
+    top: 47%;
+    left: -30px;
+    cursor: pointer;
+    @media (max-width: 990px) {
+        display: none;
+        opacity: 0;
+    }
+}
+
+.next {
+    position: absolute;
+    top: 47%;
+    cursor: pointer;
+    right: -30px;
+    @media (max-width: 990px) {
+        display: none;
+        opacity: 0;
+    }
+}
+
+
+.reviws-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 990px) {
+        margin-bottom: 25px;
+    }
+    img {
+        max-width: 100%;
+        max-height: 550px;
+        object-fit: contain;
+        @media (max-width: 990px) {
+            max-height: auto;
+            height: auto;
+        }
+    }
+}
