@@ -126,14 +126,25 @@
             @media (max-width: 990px) {
                 width: auto;
             }
+            @media (max-width: 450px) {
+                width: 90%;
+            }
+            br {
+                @media (max-width: 380px) {
+                    display: none;
+                }
+            }
             &::after {
                 left: -15px;
                 top: 7px;
                 @media (max-width: 990px) {
                     left: -15px;
                 }
+                @media (max-width: 450px) {
+                   left: 10px;
+                }
                 @media (max-width: 360px) {
-                    left: 0px;
+                    left: -10px;
                 }
             }
         }

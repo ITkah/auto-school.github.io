@@ -337,7 +337,10 @@ header {
       display: none; } }
 
 .curse-mob {
-  display: block; }
+  display: none; }
+  @media (max-width: 990px) {
+    .curse-mob {
+      display: block; } }
 
 .curse-num-container {
   margin-bottom: auto; }
@@ -484,7 +487,7 @@ header {
     @media (max-width: 1400px) {
       .curse-num-box .text-light {
         width: auto;
-        text-align: center; } }
+        text-align: left; } }
   .curse-num-box .bold {
     font-weight: bold; }
 
@@ -899,15 +902,24 @@ header {
       @media (max-width: 990px) {
         .writing-info .writing-punkt-box p:nth-child(3) {
           width: auto; } }
+      @media (max-width: 450px) {
+        .writing-info .writing-punkt-box p:nth-child(3) {
+          width: 90%; } }
+      @media (max-width: 380px) {
+        .writing-info .writing-punkt-box p:nth-child(3) br {
+          display: none; } }
       .writing-info .writing-punkt-box p:nth-child(3)::after {
         left: -15px;
         top: 7px; }
         @media (max-width: 990px) {
           .writing-info .writing-punkt-box p:nth-child(3)::after {
             left: -15px; } }
+        @media (max-width: 450px) {
+          .writing-info .writing-punkt-box p:nth-child(3)::after {
+            left: 10px; } }
         @media (max-width: 360px) {
           .writing-info .writing-punkt-box p:nth-child(3)::after {
-            left: 0px; } }
+            left: -10px; } }
     .writing-info .writing-punkt-box p:last-child {
       width: 280px;
       margin: 0 auto; }
@@ -1251,6 +1263,10 @@ header {
 .form .form-sm-title {
   margin-bottom: 15px;
   font: normal 1rem 'Roboto', sans-serif; }
+
+@media (max-width: 990px) {
+  .form br {
+    display: none; } }
 
 .input-box {
   width: 350px;

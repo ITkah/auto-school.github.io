@@ -8,7 +8,10 @@
 }
 
 .curse-mob {
-    display: block;
+    display: none;
+    @media (max-width: 990px) {
+        display: block;
+    }
 }
 
 .curse-num-container {
@@ -123,7 +126,7 @@
         font-weight: normal;
         @media (max-width: 1400px) {
             width: auto;
-            text-align: center;
+            text-align: left;
         }
     }
     .bold {
