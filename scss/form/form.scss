@@ -22,48 +22,113 @@
         margin-bottom: 15px;
         font: normal 1rem 'Roboto', sans-serif;
     }
-    .input-box {
-        width: 350px;
+}
+
+.input-box {
+    width: 350px;
+    margin-bottom: 15px;
+    @media (max-width: 576px) {
+        width: 100%;
+    }
+    input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 15px;
+        border: 2px solid #000;
+        border-radius: 20px;
+    }
+}
+
+.btn-wrap {
+    margin-bottom: 20px;
+    width: 350px;
+    @media (max-width: 576px) {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+        background: #C53D28;
+        border-radius: 20px;
+        color: #fff;
+        outline: none;
+        font: normal 1.125rem 'Roboto', sans-serif;
+        border: none;
+        padding: 12px;
+        transition: .3s;
+        cursor: pointer;
+        &:hover {
+            background: rgb(179, 54, 35);
+            box-shadow: 0 0 12px 0 rgba(0,0,0,.4);
+        }
+    }
+}
+
+.politica-form {
+    opacity: .5;
+    font: normal .8rem 'Roboto', sans-serif;
+    br {
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
+    a {
+        text-decoration: underline;
+        color: #000;
+    }
+}
+
+
+.white-popup-block {
+    background: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px 50px;
+    position: relative;
+    border-radius: 15px;
+    @media (max-width: 990px) {
+        padding: 20px;
+    }
+    .modal-title {
+        font: 900 2rem 'Roboto', sans-serif;
+        margin-bottom: 10px;
+        @media (max-width: 990px) {
+            font-size: 1.5rem;
+        }
+    }
+    .modal-text {
         margin-bottom: 15px;
-        @media (max-width: 576px) {
-            width: 100%;
-        }
-        input {
-            width: 100%;
-            box-sizing: border-box;
-            padding: 12px 15px;
-            border: 2px solid #000;
-            border-radius: 20px;
-        }
-    }
-    .btn-wrap {
-        margin-bottom: 20px;
-        width: 350px;
-        @media (max-width: 576px) {
-            width: 100%;
-        }
-        button {
-            width: 100%;
-            background: #C53D28;
-            border-radius: 20px;
-            color: #fff;
-            outline: none;
-            font: normal 1.125rem 'Roboto', sans-serif;
-            border: none;
-            padding: 12px;
-        }
-    }
-    .politica-form {
-        opacity: .5;
-        font: normal .8rem 'Roboto', sans-serif;
+        font-weight: normal;
         br {
             @media (max-width: 576px) {
                 display: none;
             }
         }
-        a {
-            text-decoration: underline;
-            color: #000;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        button {
+            border: 2px solid #C53D28;
+            background: transparent;
+            color: #C53D28;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }   
+    .input-box {
+        width: 300px;
+        @media (max-width: 576px) {
+            width: 100%;
+        }
+    }
+    .btn-wrap {
+        width: 300px;
+        @media (max-width: 576px) {
+            width: 100%;
         }
     }
 }

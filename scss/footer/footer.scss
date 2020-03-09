@@ -60,6 +60,9 @@ footer {
             margin: 0 15px;
             font: 900 .95rem 'Roboto', sans-serif;
             color: #000;
+            &:hover {
+                text-decoration: underline;
+            }
             @media (max-width:1100px) {
                 margin: 0 5px;
             }
@@ -91,6 +94,9 @@ footer {
         color: #000;
         font: 900 .95rem 'Roboto', sans-serif;
         position: relative;
+        &:hover {
+            text-decoration: underline;
+        }
         @media (max-width: 990px) {
             margin: 0 10px;
         }

@@ -1,0 +1,57 @@
+.aсc-body {
+    display: none;
+}
+
+
+.question-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tab-box {
+    cursor: pointer;
+    height: 20px;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    background: #fff;
+    padding: 14px;
+    padding-left: 50px;
+    position: relative;
+    &::before {
+        content: '+';
+        color: #C53D28;
+        font-size: 20px;
+        position: absolute;
+        font-weight: bold;
+        left: 25px;
+        top: 10px;
+    }
+}
+
+
+.tab-title {
+    font: normal 1rem 'Roboto', sans-serif
+}
+
+.tab-info {
+    margin-top: 10px;
+    display: none;
+    font: normal .9rem 'Roboto', sans-serif;
+}
+
+.active-tabs {
+    height: auto;
+    &::before {
+        content: '-';
+        color: #C53D28;
+        font-size: 20px;
+        position: absolute;
+        font-weight: bold;
+        left: 25px;
+        top: 10px;
+    }
+}

@@ -1,5 +1,5 @@
 .banner {
-    height: 600px;
+    height: 700px;
     background: url(../img/banner/banner-bg.png) no-repeat center center fixed;
     background-size: cover;
     @media (max-width: 768px) {
@@ -8,6 +8,9 @@
         justify-content: center;
         align-items: center;
     }
+    .btn-dark {
+        display: block;
+    }
 }
 
 .banner-container {
@@ -15,7 +18,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 175px;
+    padding-top: 240px;
     @media(max-width: 768px) {
         padding-top: 0;
     }
@@ -67,6 +70,10 @@
         }
         a {
             margin: 0 10px;
+            transition: .3s;
+            &:hover {
+                transform: scale(1.2);
+            }
         }
     }
 }

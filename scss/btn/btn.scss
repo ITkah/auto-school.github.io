@@ -1,11 +1,37 @@
 .btn-dark {
     background: #C53D28;
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 15px 10px;
     max-width: 200px;
     margin: 0 auto;
     font: bold 1rem 'Roboto', sans-serif;
     color: #fff;
+    transition: .3s;
+    &:hover {
+        background: rgb(179, 54, 35);
+        box-shadow: 0 0 12px 0 rgba(0,0,0,.4);
+    }
+    @media (max-width: 576px) {
+        padding: 12px 10px;
+        font-size: .9rem;
+    }
+}
+
+.btn-white {
+    background: #fff;
+    border-radius: 15px;
+    padding: 11px 35px;
+    max-width: 200px;
+    margin: 0 auto;
+    font: bold 1rem 'Roboto', sans-serif;
+    color: #C53D28;
+    transition: .3s;
+    border: 3px solid #C53D28;
+    &:hover {
+        background: rgb(179, 54, 35);
+        color: #fff;
+        box-shadow: 0 0 12px 0 rgba(0,0,0,.4);
+    }
     @media (max-width: 576px) {
         padding: 12px 10px;
         font-size: .9rem;

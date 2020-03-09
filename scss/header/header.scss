@@ -102,6 +102,9 @@ header {
         font: bold 1rem 'Roboto', sans-serif;
         position: relative;
         padding-left: 30px;
+        &:hover {
+            text-decoration: underline;
+        }
     }
     a:first-child {
         margin-bottom: 10px;

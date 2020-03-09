@@ -26,6 +26,11 @@ $(document).ready(function() {
         $("nav").slideToggle(100);
     });
 
+    $(".tab-box").on("click", function(){
+      $(this).toggleClass("active-tabs");
+      $(this).children(".tab-info").slideToggle(50);
+    });
+
     $('.single-item').slick({
         infinite: true,
         nav: false,
@@ -128,7 +133,21 @@ $(document).ready(function() {
       image: {
         verticalFit: true
       }
-      
+    });
+
+    $('.popup-with-form').magnificPopup({
+      type: 'inline',
+      preloader: false,
+      focus: '#name',
+      callbacks: {
+        beforeOpen: function() {
+          if($(window).width() < 700) {
+            this.st.focus = false;
+          } else {
+            this.st.focus = '#name';
+          }
+        }
+      }
     });
 
 });
