@@ -38,6 +38,29 @@ $(document).ready(function() {
         margin: 10
     });
 
+    $('.single-item-2').slick({
+      infinite: true,
+      nav: false,
+      dots: true,
+      margin: 10,
+      responsive: [
+        {
+          breakpoint: 990,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+      ]
+    });
+
     $('.teacher-item').slick({
       infinite: true,
       nav: true,

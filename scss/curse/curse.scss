@@ -1,0 +1,150 @@
+.curse-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    @media (max-width: 990px) {
+        display: none;
+    }
+}
+
+.curse-mob {
+    display: block;
+}
+
+.curse-num-container {
+    margin-bottom: auto;
+}
+
+.curse-box {
+    background: #FFF;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, .1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width: 990px) {
+        box-shadow: none;
+        margin: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.07);
+    }
+}
+
+.curse-box-title {
+    background: #C53D28;
+    border-radius: 15px;
+    padding: 15px 25px;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 20px;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: 1400px) {
+        padding: 15px;
+    }
+    @media (max-width: 990px) {
+        padding: 5px;
+        margin-bottom: 0;
+    }
+    br {
+        @media (max-width: 1400px) {
+            display: none;
+        }
+    }
+    .curse-title {
+        @media (max-width: 1400px) {
+            font-size: 1.1rem;
+        }
+    }
+    .price {
+        margin-top: 10px;
+        font-size: 1.5rem;
+        @media (max-width: 1400px) {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.curse-num-box {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    @media (max-width: 1400px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (max-width: 990px) {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-gap: 10px;
+        padding: 0 10px;
+        margin: 10px 0;
+    }
+    .num {
+        width: 80px;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #C53D28;
+        text-align: right;
+        margin-right: 20px;
+        @media (max-width: 1400px) {
+            width: auto;
+            margin: 0 0 10px 0;
+        }
+        @media (max-width: 990px) {
+            width: auto;
+            margin: 0;
+            text-align: right;
+            font-size: 2.5rem;
+        }
+    }
+    .img-icon-curse {
+        height: 55px;
+        text-align: right;
+        margin-right: 0;
+        margin-right: 15px;
+        @media (max-width: 1400px) {
+            margin: 0 0 10px 0;
+            height: auto;
+        }
+        @media (max-width: 990px) {
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+    .text-light {
+        font-size: 1rem;
+        width: 200px;
+        font-weight: normal;
+        @media (max-width: 1400px) {
+            width: auto;
+            text-align: center;
+        }
+    }
+    .bold {
+        font-weight: bold;
+    }
+}
+
+.curse-btn-box {
+    margin-top: 30px;
+    .btn-white {
+        box-sizing: border-box;
+        width: 100%;
+        display: block;
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+.plus-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
