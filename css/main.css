@@ -129,6 +129,10 @@ header {
   background: #fff;
   -webkit-box-shadow: 0 7px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0 7px 20px rgba(0, 0, 0, 0.1); }
+  .header-fix .header-logo img {
+    height: 95px;
+    position: relative;
+    top: 5px; }
   .header-fix nav ul a {
     color: #000; }
     .header-fix nav ul a:hover {
