@@ -37,15 +37,7 @@
         width: 100%;
         @media (max-width: 576px) {
             height: 220px;
-            left: -20px;
-            width: 110%;
             position: absolute;
-        }
-        @media (max-width: 380px) {
-            width: 113%;
-        }
-        @media (max-width: 320px) {
-            width: 114.2%;
         }
     }
 }

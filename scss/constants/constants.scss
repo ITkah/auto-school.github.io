@@ -72,3 +72,19 @@ ul {
 .slick-slide {
     outline: none;
 }
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: #C53D28;
+    cursor: pointer;
+    opacity: .5;
+}
+
+body::-webkit-scrollbar-track {
+    background: #fff;
+    cursor: pointer;
+}

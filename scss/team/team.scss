@@ -14,10 +14,7 @@
             overflow: hidden;
             cursor: pointer;
             @media (max-width: 1200px) {
-                height: 170px;
-            }
-            @media (max-width:990px) {
-                height: 150px;
+                height: auto
             }
         }
         img {

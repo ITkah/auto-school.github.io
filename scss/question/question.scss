@@ -21,6 +21,9 @@
     padding: 14px;
     padding-left: 50px;
     position: relative;
+    @media (max-width: 990px) {
+        height: auto;
+    }
     &::before {
         content: '+';
         color: #C53D28;
