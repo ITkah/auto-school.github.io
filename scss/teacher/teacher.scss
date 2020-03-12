@@ -4,7 +4,8 @@
         height: 252px;
         margin: 0 auto;
         @media (max-width: 990px) {
-            height: auto;
+            height: 300px;
+            object-fit: cover;
         }
     }
 }
