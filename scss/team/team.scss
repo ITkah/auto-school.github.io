@@ -9,13 +9,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         div {
-            height: 200px;
+            height: 220px;
             width: 100%;
             overflow: hidden;
             cursor: pointer;
-            @media (max-width: 1200px) {
-                height: auto
-            }
         }
         img {
             height: 100%;
@@ -48,7 +45,7 @@
     }
     .mob-box-photo {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         margin-bottom: 10px;
         grid-gap: 10px;
         img {

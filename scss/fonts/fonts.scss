@@ -1,4 +1,13 @@
 @font-face {
-    font-family: "Open Sans";
-    src: url("../fonts/gotham/");
+    font-family: "noto-sans-normal";
+    src: url("../fonts/noto/NotoSans-Regular.ttf"),
+         url('../fonts/noto/NotoSans.woff') format('woff'),
+         url('../fonts/noto/NotoSans.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "gotham-bold";
+    src: url("../fonts/gotham/GothamPro-Bold.ttf"),
+         url('../fonts/gotham/GothamPro-Bold.woff') format('woff2'),
+         url('../fonts/gotham/GothamPro-Bold.woff2') format('woff');
 }

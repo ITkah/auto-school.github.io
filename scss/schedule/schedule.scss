@@ -30,7 +30,7 @@
 
 .schedule-title {
     display: flex;
-    font: 900 1.5rem 'Roboto', sans-serif;
+    font: 1.5rem "gotham-bold";
     align-items: flex-end;
     margin-bottom: 15px;
     @media (max-width: 990px) {
@@ -79,7 +79,7 @@
 
 .occupation {
     width: 100px;
-    font: 900 1.1rem 'Roboto', sans-serif;
+    font: 1.1rem "gotham-bold";
     position: relative;
     @media (max-width: 990px) {
         margin-bottom: 15px;
@@ -108,7 +108,7 @@
 }
 
 .day {
-    font: normal 1.1rem 'Roboto', sans-serif;
+    font: 1.1rem "noto-sans-normal";
     position: relative;
     top: 2px;
 }
@@ -174,8 +174,20 @@
         }
     }
     .schedule-map-text {
-        font-weight: normal;
         font-size: 1rem;
         line-height: 25px;
+    }
+}
+
+.schedule-active {
+    &::after {
+        position: relative;
+        left: 10px;
+        top: 5px;
+        content: url(../img/icon/fire.png);
+        @media (max-width: 990px) {
+            left: 0;
+            top: 0;
+        }
     }
 }

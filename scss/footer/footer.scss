@@ -58,7 +58,7 @@ footer {
         }
         p {
             margin: 0 15px;
-            font: 900 .95rem 'Roboto', sans-serif;
+            font: 900 .95rem "gotham-bold";
             color: #000;
             &:hover {
                 text-decoration: underline;
@@ -92,7 +92,7 @@ footer {
     }
     a {
         color: #000;
-        font: 900 .95rem 'Roboto', sans-serif;
+        font:.95rem "gotham-bold";
         position: relative;
         &:hover {
             text-decoration: underline;
@@ -163,7 +163,7 @@ footer {
     }
     p {
         color: #000;
-        font: 500 .8rem 'Roboto', sans-serif;
+        font: 500 .8rem "noto-sans-normal";
         opacity: .5;
         @media (max-width: 990px) {
             text-align: center;

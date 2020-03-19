@@ -1,29 +1,30 @@
 .title-xl {
-    margin-bottom: 40px;
-    font: 900 2.25rem 'Roboto', sans-serif;
+    margin-bottom: 60px;
+    display: block;
+    font: 2.25rem "gotham-bold";
     text-align: center;
     @media (max-width: 990px) {
         font-size: 1.9rem;
-        margin-bottom: 25px;
+        margin-bottom: 45px;
     }
 }
 
 .title-sm {
-    font: 900 1.25rem 'Roboto', sans-serif;
+    font: 1.25rem "gotham-bold";
     @media (max-width: 990px) {
         font-size: 1.125rem;
     }
 }
 
 .text-light {
-    font: 300 .95rem 'Roboto', sans-serif;
+    font: .95rem "noto-sans-normal";
     @media (max-width: 990px) {
         font-size: .87rem;
     }
 }
 
 .text-bold {
-    font: 700 .95rem 'Roboto', sans-serif;
+    font: .95rem "gotham-bold";
     @media (max-width: 990px) {
         font-size: .87rem;
     }

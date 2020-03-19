@@ -46,14 +46,15 @@ header {
             align-items: center;
             @media (max-width: 990px) {
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: flex-end;
                 padding-bottom: 10px;
+                padding-right: 20px;
             }
             p {
                 margin: 0 10px;
                 padding: 12px 14px;
                 color: #fff;
-                font: bold 1.2rem 'Roboto', sans-serif;
+                font: 1.2rem "gotham-bold";
                 border: 3px solid transparent;
                 border-radius: 15px;
                 transition: .3s;
@@ -104,7 +105,7 @@ header {
     margin-right: 20px;
     a {
         color: #fff;
-        font: bold 1rem 'Roboto', sans-serif;
+        font:  1rem "gotham-bold";
         position: relative;
         padding-left: 30px;
         &:hover {
@@ -192,3 +193,18 @@ header {
         }
     }
 }
+
+main {
+    overflow: hidden;
+  }
+  
+  footer {
+    overflow: hidden;
+  }
+  
+  @media (max-width: 576px) {
+    body,html {
+      overflow-x: hidden;
+    }
+  }
+  

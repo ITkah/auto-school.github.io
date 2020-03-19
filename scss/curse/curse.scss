@@ -45,7 +45,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    @media (max-width: 1400px) {
+    @media (max-width: 1500px) {
         padding: 15px;
     }
     @media (max-width: 990px) {
@@ -53,19 +53,19 @@
         margin-bottom: 0;
     }
     br {
-        @media (max-width: 1400px) {
+        @media (max-width: 1500px) {
             display: none;
         }
     }
     .curse-title {
-        @media (max-width: 1400px) {
+        @media (max-width: 1500px) {
             font-size: 1.1rem;
         }
     }
     .price {
         margin-top: 10px;
         font-size: 1.5rem;
-        @media (max-width: 1400px) {
+        @media (max-width: 1500px) {
             font-size: 1.1rem;
         }
     }
@@ -77,9 +77,8 @@
     align-items: center;
     justify-content: flex-end;
     margin-bottom: 10px;
-    @media (max-width: 1400px) {
-        flex-direction: column;
-        align-items: center;
+    @media (max-width: 1500px) {
+        justify-content: flex-start;
     }
     @media (max-width: 990px) {
         display: grid;
@@ -91,19 +90,17 @@
     .num {
         width: 80px;
         font-size: 3rem;
-        font-weight: bold;
+        font-family: "gotham-bold";
         color: #C53D28;
         text-align: right;
         margin-right: 20px;
-        @media (max-width: 1400px) {
-            width: auto;
-            margin: 0 0 10px 0;
+        @media (max-width: 1500px) {
+            width: 50px;
+            font-size: 2rem;
         }
         @media (max-width: 990px) {
             width: auto;
             margin: 0;
-            text-align: right;
-            font-size: 2.5rem;
         }
     }
     .img-icon-curse {
@@ -111,9 +108,8 @@
         text-align: right;
         margin-right: 0;
         margin-right: 15px;
-        @media (max-width: 1400px) {
-            margin: 0 0 10px 0;
-            height: auto;
+        @media (max-width: 1500px) {
+            height: 40px;
         }
         @media (max-width: 990px) {
             height: auto;
@@ -123,8 +119,7 @@
     .text-light {
         font-size: 1rem;
         width: 200px;
-        font-weight: normal;
-        @media (max-width: 1400px) {
+        @media (max-width: 1500px) {
             width: auto;
             text-align: left;
         }

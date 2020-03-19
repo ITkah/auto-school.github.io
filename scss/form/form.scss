@@ -20,7 +20,7 @@
     }
     .form-sm-title {
         margin-bottom: 15px;
-        font: normal 1rem 'Roboto', sans-serif;
+        font: normal 1rem "noto-sans-normal";
     }
     br {
         @media (max-width: 990px) {
@@ -56,7 +56,7 @@
         border-radius: 20px;
         color: #fff;
         outline: none;
-        font: normal 1.125rem 'Roboto', sans-serif;
+        font: normal 1.125rem "noto-sans-normal";
         border: none;
         padding: 12px;
         transition: .3s;
@@ -70,7 +70,7 @@
 
 .politica-form {
     opacity: .5;
-    font: normal .8rem 'Roboto', sans-serif;
+    font: normal .8rem "noto-sans-normal";
     br {
         @media (max-width: 576px) {
             display: none;
@@ -95,7 +95,7 @@
         padding: 20px;
     }
     .modal-title {
-        font: 900 2rem 'Roboto', sans-serif;
+        font: 900 2rem "gotham-bold";
         margin-bottom: 10px;
         @media (max-width: 990px) {
             font-size: 1.5rem;

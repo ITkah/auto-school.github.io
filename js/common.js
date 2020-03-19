@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
     $('div.tabs__caption').on('click', 'div:not(.active)', function() {
         $(this)
           .addClass('active').siblings().removeClass('active')
@@ -43,6 +44,7 @@ $(document).ready(function() {
       nav: false,
       dots: true,
       margin: 10,
+      adaptiveHeight: true,
       responsive: [
         {
           breakpoint: 990,

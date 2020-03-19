@@ -29,21 +29,21 @@
         color: #C53D28;
         font-size: 20px;
         position: absolute;
-        font-weight: bold;
+        font-family: "gotham-bold";
         left: 25px;
-        top: 10px;
+        top: 14px;
     }
 }
 
 
 .tab-title {
-    font: normal 1rem 'Roboto', sans-serif
+    font: 1rem "noto-sans-normal";
 }
 
 .tab-info {
     margin-top: 10px;
     display: none;
-    font: normal .9rem 'Roboto', sans-serif;
+    font: .9rem "noto-sans-normal";
 }
 
 .active-tabs {

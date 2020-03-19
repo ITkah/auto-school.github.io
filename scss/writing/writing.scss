@@ -29,7 +29,6 @@
     }
     .writing-text {
         font-size: 1.2rem;
-        font-weight: normal;
         @media (max-width: 990px) {
             font-size: 1rem;
         }
@@ -48,14 +47,14 @@
         padding: 15px;
     }
     .writing-info-title {
-        font: bold 2.2rem 'Roboto', sans-serif;
+        font: 2.2rem "gotham-bold";
         margin-bottom: 10px;
         @media (max-width: 990px) {
             font-size: 1.4rem;
         }
     }
     .writing-info-text {
-        font: normal 1.2rem 'Roboto', sans-serif;
+        font: 1.2rem "noto-sans-normal";
         margin-bottom: 30px;
         @media (max-width: 990px) {
             margin-bottom: 10px;
@@ -74,7 +73,7 @@
             grid-template-columns: 1fr;
         }
         p {
-            font: bold 1.2rem 'Roboto', sans-serif;
+            font: bold 1.2rem "gotham-bold";
             position: relative;
             line-height: 25px;
             @media (max-width: 990px) {
@@ -99,7 +98,7 @@
                 width: auto;
             }
             &::after {
-                left: -10px;
+                left: -20px;
                 top: 7px;
                 @media (max-width: 990px) {
                     left: -20px;
@@ -135,7 +134,7 @@
                 }
             }
             &::after {
-                left: -15px;
+                left: 10px;
                 top: 7px;
                 @media (max-width: 990px) {
                     left: -15px;
@@ -155,7 +154,7 @@
                 width: auto;
             }
             &::after {
-                left: 5px;
+                left: -5px;
                 top: 7px;
                 @media (max-width: 990px) {
                     left: -5px;
